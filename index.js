@@ -6,11 +6,7 @@ require('dotenv').config();
 
 const PORT = process.env.PORT || 3000;
 
-//middleware here is .use() isse jo bhi apni http request aayi hai usmai kuch data hoga to use hum fetch/get kr skte hai...
-// apne http request ke upar middleware kuch addition task perform krte hai jayse ki,-> logging,authentication,parsing,error handling...
-// to basically apne server pr jo http request aayi hai usmai kuch data hoga to middleware se hum use easyly fetch kr sakte hai..
-//uska kam yaha hai ki bas json ko pass krna..
-
+//This is middleware => .use() - which is used to we can fetch the json data.
 app.use(express.json());
 
 const blog = require('./routes/blogs');
